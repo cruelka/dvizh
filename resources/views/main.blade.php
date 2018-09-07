@@ -8,13 +8,13 @@
     <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
 
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Rubik:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('/css/styles-merged.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/style.min.css')}}">
-    <link rel="stylesheet" href="{{asset('/}css/custom.css')}}">
+    <link rel="stylesheet" href="{{asset('css/styles-merged.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/custom.css')}}">
 
     <!--[if lt IE 9]>
-    <script src='{{ asset("/js/vendor/html5shiv.min.js")}}'></script>
-    <script src='{{asset("/js/vendor/respond.min.js")}}'></script>
+    <script src='{{ asset("js/vendor/html5shiv.min.js")}}'></script>
+    <script src='{{asset("js/vendor/respond.min.js")}}'></script>
     <![endif]-->
 </head>
 <body>
@@ -25,7 +25,7 @@
 
 <header role="banner" class="probootstrap-header">
     <div class="container">
-        <a href="/" class="probootstrap-logo"><img style = "width:50px;" src="{{asset("/img/logo.png")}}"><span>вижение</span></a>
+        <a href="/" class="probootstrap-logo"><img style = "width:50px;" src="{{asset("img/logo.png")}}"><span>вижение</span></a>
 
         <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Меню</i></a>
         <div class="mobile-menu-overlay"></div>
@@ -54,7 +54,7 @@
     <section class="probootstrap-slider flexslider">
         <ul class="slides">
             <!-- class="overlay" -->
-            <li style="background-image: url({{asset("/img/slider_1.jpg")}});">
+            <li style="background-image: url({{asset("img/slider_1.jpg")}});">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">
@@ -80,7 +80,7 @@
     </section>
     <section class="probootstrap-half">
         <div class="image-wrap">
-            <div class="image" style="background-image: url({{asset("/img/slider_7.jpg")}});"></div>
+            <div class="image" style="background-image: url({{asset("img/slider_7.jpg")}});"></div>
         </div>
         <div class="text">
             <p class="mb10 subtitle">Наш магазин</p>
@@ -92,7 +92,7 @@
     </section>
     <section class="probootstrap-half reverse">
         <div class="image-wrap">
-            <div class="image" style="background-image: url({{asset("/img/slider_6.jpg")}});"></div>
+            <div class="image" style="background-image: url({{asset("img/slider_6.jpg")}});"></div>
         </div>
         <div class="text">
             <p class="mb10 subtitle">Мы - Движение</p>
@@ -103,7 +103,7 @@
     </section>
     <section class="probootstrap-half">
         <div class="image-wrap">
-            <div class="image" style="background-image: url({{asset("/img/slider_2.jpg")}});"></div>
+            <div class="image" style="background-image: url({{asset("img/slider_2.jpg")}});"></div>
         </div>
         <div class="text">
             <p class="mb10 subtitle">Наши услуги</p>
@@ -147,7 +147,7 @@
 
                             <div class="probootstrap-testimony-wrap">
                                 <figure>
-                                    <img src="{{asset("/img/person_1.jpg")}}" alt="Free Bootstrap Template by uicookies.com">
+                                    <img src="{{asset("img/person_1.jpg")}}" alt="Free Bootstrap Template by uicookies.com">
                                 </figure>
                                 <blockquote class="quote">Текст отзыва <cite class="author">&mdash; Человек <br> <span>Звание человека</span></cite></blockquote>
                             </div>
@@ -156,7 +156,7 @@
                         <div class="item">
                             <div class="probootstrap-testimony-wrap">
                                 <figure>
-                                    <img src="{{asset("/img/person_1.jpg")}}" alt="Free Bootstrap Template by uicookies.com">
+                                    <img src="{{asset("img/person_1.jpg")}}" alt="Free Bootstrap Template by uicookies.com">
                                 </figure>
                                 <blockquote class="quote">Текст отзыва <cite class="author">&mdash; Человек <br> <span>Звание человека</span></cite></blockquote>
                             </div>
@@ -164,7 +164,7 @@
                         <div class="item">
                             <div class="probootstrap-testimony-wrap">
                                 <figure>
-                                    <img src="{{asset("/img/person_1.jpg")}}" alt="Free Bootstrap Template by uicookies.com">
+                                    <img src="{{asset("img/person_1.jpg")}}" alt="Free Bootstrap Template by uicookies.com">
                                 </figure>
                                 <blockquote class="quote">Текст отзыва <cite class="author">&mdash; Человек <br> <span>Звание человека</span></cite></blockquote>
                             </div>
@@ -224,9 +224,9 @@
 </div>
 
 
-<script src="{{asset("/js/scripts.min.js")}}"></script>
-<script src="{{asset("/js/main.min.js")}}"></script>
-<script src="{{asset("/js/custom.js")}}"></script>
+<script src="{{asset("js/scripts.min.js")}}"></script>
+<script src="{{asset("js/main.min.js")}}"></script>
+<script src="{{asset("js/custom.js")}}"></script>
 
 </body>
 </html>
