@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-        $posts = App\Post::where('category_id','1')->take(2)->get();
+        $posts = App\Post::where('category_id','1')->take(8)->get();
 
     return view('main',compact('posts'));
 });
