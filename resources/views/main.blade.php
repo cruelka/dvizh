@@ -25,7 +25,7 @@
 
 <header role="banner" class="probootstrap-header">
     <div class="container">
-        <a href="/" class="probootstrap-logo"><img style = "width:50px;" src="{{asset("img/logo.png")}}"></a>
+        <a href="/" class="probootstrap-logo"><img style = "width:250px;" src="{{asset("img/logo.png")}}"></a>
 
         <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Меню</i></a>
         <div class="mobile-menu-overlay"></div>
