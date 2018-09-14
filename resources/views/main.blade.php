@@ -38,13 +38,14 @@
                 <li><a href="/">Акции</a></li>
             </ul>
             <div class="extra-text visible-xs">
-                <a href="#" class="probootstrap-burger-menu"><i>Меню</i></a>
+               <!-- <a href="#" class="probootstrap-burger-menu"><i>Меню</i></a>
                 <h5>Мы в социальных сетях</h5>
                 <ul class="social-buttons">
                     <li><a href="#"><i class="icon-twitter"></i></a></li>
                     <li><a href="#"><i class="icon-facebook2"></i></a></li>
                     <li><a href="#"><i class="icon-instagram2"></i></a></li>
                 </ul>
+                -->
             </div>
         </nav>
     </div>
