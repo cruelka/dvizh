@@ -189,6 +189,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="probootstrap-footer-widget">
+                        <!--
                         <h3>Мы в социальных сетях</h3>
                         <ul class="probootstrap-footer-social">
                             <li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -196,6 +197,7 @@
                             <li><a href="#"><i class="icon-dribbble"></i></a></li>
                             <li><a href="#"><i class="icon-instagram2"></i></a></li>
                         </ul>
+                        -->
                     </div>
                 </div>
             </div>
