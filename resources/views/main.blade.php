@@ -100,13 +100,13 @@
     </section>
     <section class="probootstrap-half reverse">
         <div class="image-wrap">
-            <div class="image" style="background-image: url({{asset("img/slider_6.jpg")}});"></div>
+            <div class="image" style="background-image: url('/storage/{{$team->image}}');"></div>
         </div>
         <div class="text">
             <p class="mb10 subtitle">Мы - Движение</p>
-            <h3 class="mt0 mb40">Встречайте нашу команду</h3>
-            <p>Описание работников.</p>
-            <p class="mb50">Описание.</p>
+            <h3 class="mt0 mb40">{{$team->title}}</h3>
+            <p>{{$team->excerpt}}.</p>
+            {!!  $team->body !!}
         </div>
     </section>
     <section class="probootstrap-half">
