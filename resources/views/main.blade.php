@@ -88,13 +88,13 @@
     </section>
     <section class="probootstrap-half">
         <div class="image-wrap">
-            <div class="image" style="background-image: url({{asset("img/slider_7.jpg")}});"></div>
+            <div class="image" style="background-image: url('/storage/{{$nash->image}}');"></div>
         </div>
         <div class="text">
             <p class="mb10 subtitle">Наш магазин</p>
-            <h3 class="mt0 mb40">Движение канцтовары</h3>
-            <p>Короткое описание.</p>
-            <p class="mb50">Еще параграф описания.</p>
+            <h3 class="mt0 mb40">{{$nash->title}}</h3>
+            <p>{{ $nash->excerpt }}.</p>
+            <p class="mb50">{!!  $nash->body !!}</p>
             <p> <a href="https://www.office-zakaz.ru/" class="btn btn-primary mb10">Перейти</a></p>
         </div>
     </section>
