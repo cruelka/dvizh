@@ -94,7 +94,7 @@
             <p class="mb10 subtitle">Наш магазин</p>
             <h3 class="mt0 mb40">{{$nash->title}}</h3>
             <p>{{ $nash->excerpt }}.</p>
-            <p class="mb50">{!!  $nash->body !!}</p>
+          {!!  $nash->body !!}
             <p> <a href="https://www.office-zakaz.ru/" class="btn btn-primary mb10">Перейти</a></p>
         </div>
     </section>
