@@ -111,36 +111,13 @@
     </section>
     <section class="probootstrap-half">
         <div class="image-wrap">
-            <div class="image" style="background-image: url({{asset("img/slider_2.jpg")}});"></div>
+            <div class="image" style="background-image: url('/storage/{{$services->image}}');"></div>
         </div>
         <div class="text">
             <p class="mb10 subtitle">Наши услуги</p>
-            <h3 class="mt0 mb40">Что мы предлагаем</h3>
-            <div class="row mb20">
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <div class="service-item">
-                        <span class="number">1</span>
-                        <h4 class="mt0">Наклейки</h4>
-                        <p>Описание.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <div class="service-item">
-                        <span class="number">2</span>
-                        <h4 class="mt0">Канцелярские товары</h4>
-                        <p>Описание.</p>
-                    </div>
-                </div>
-                <div class="clearfix visible-sm-block"></div>
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <div class="service-item">
-                        <span class="number">3</span>
-                        <h4 class="mt0">Услуга</h4>
-                        <p>Описание.</p>
-                    </div>
-                </div>
+            <h3 class="mt0 mb40">{{$services->title}}</h3>
 
-            </div>
+           {!! $services->body !!}
 
         </div>
     </section>

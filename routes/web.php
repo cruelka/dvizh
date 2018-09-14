@@ -15,9 +15,11 @@ Route::get('/', function () {
         $posts = App\Post::where('category_id','1')->take(8)->get();
         $nash = App\Page::where('slug', '=', 'nash-magazin')->firstOrFail();
         $team= App\Page::where('slug', '=', 'nasha-komanda')->firstOrFail();
+        $services= App\Page::where('slug', '=', 'chto-my-predlagaem')->firstOrFail();
 
 
-    return view('main',compact('posts', 'nash','team'));
+
+    return view('main',compact('posts', 'nash','team','services'));
 });
 
 Auth::routes();
