@@ -63,7 +63,7 @@
                         <div class="col-md-10 col-md-offset-1">
                             <div class="probootstrap-slider-text text-center">
                                 <h1 class="probootstrap-heading probootstrap-animate mb20">{{$post->title}}</h1>
-                                <div class="probootstrap-animate probootstrap-sub-wrap mb30">{{$post->body}}</div>
+                                <div class="probootstrap-animate probootstrap-sub-wrap mb30">{!!  $post->body !!}</div>
                                 <p class="probootstrap-animate"><a href="#" class="btn btn-ghost btn-ghost-white">{{$post->excerpt}}</a></p>
                             </div>
                         </div>
