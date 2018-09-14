@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('main');
+        $posts = App\Post::where('category_id','1')->take(2)->get();
+        $why = App\Page::where('slug', '=', 'why-its-good-for-your-car')->firstOrFail();
+        $eco = App\Page::where('slug', '=', 'why-eco-wash')->firstOrFail();
+        $products = App\Product::take(4)->get();
+    return view('main',compact('posts'));
 });
 
 Auth::routes();

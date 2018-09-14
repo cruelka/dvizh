@@ -56,34 +56,24 @@
     <section class="probootstrap-slider flexslider">
         <ul class="slides">
             <!-- class="overlay" -->
-            <li style="background-image: url({{asset("img/slider_1.jpg")}});">
+            @foreach( $posts as $post )
+            <li style="background-image: url('/storage/{{$post->image}}');">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="probootstrap-slider-text text-center">
-                                <h1 class="probootstrap-heading probootstrap-animate mb20">Образец текста</h1>
-                                <div class="probootstrap-animate probootstrap-sub-wrap mb30">Заливается в админке</div>
-                                <p class="probootstrap-animate"><a href="#" class="btn btn-ghost btn-ghost-white">ссылка к описанию</a></p>
+                                <h1 class="probootstrap-heading probootstrap-animate mb20">{{$post->title}}</h1>
+                                <div class="probootstrap-animate probootstrap-sub-wrap mb30">{{$post->body}}</div>
+                                <p class="probootstrap-animate"><a href="#" class="btn btn-ghost btn-ghost-white">{{$post->excerpt}}</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </li>
+            @endforeach
             <!-- class="overlay" -->
             <!-- class="overlay" -->
-            <li style="background-image: url({{asset("img/slider_2.jpg")}});">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1">
-                            <div class="probootstrap-slider-text text-center">
-                                <h1 class="probootstrap-heading probootstrap-animate mb20">Образец текста2</h1>
-                                <div class="probootstrap-animate probootstrap-sub-wrap mb30">Заливается в админке</div>
-                                <p class="probootstrap-animate"><a href="#" class="btn btn-ghost btn-ghost-white">ссылка к описанию</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
+
             <!-- class="overlay" -->
 
 
