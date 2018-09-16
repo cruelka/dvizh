@@ -80,13 +80,14 @@
 
         </ul>
 
-        <div class="container">
-            <div class="chevron"></div>
-            <div class="chevron"></div>
-            <div class="chevron"></div>
-            <span class="text">Прокрутите вниз</span>
-        </div>
+
     </section>
+    <div class="container_scroll">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <span class="text">Прокрутите вниз</span>
+    </div>
     <section class="probootstrap-section probootstrap-bg-white">
         <div class="container-fluid">
             <div class="section-heading text-center">
