@@ -393,6 +393,8 @@ a.hover-reverse:active, a.hover-reverse:focus, a.hover-reverse:hover {
     display: block;
     width : 100% !important;
     height: inherit !important;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .probootstrap-intro h1 {
