@@ -709,7 +709,9 @@ a.hover-reverse:active, a.hover-reverse:focus, a.hover-reverse:hover {
 .probootstrap-section.probootstrap-bg-white {
     background: #fff
 }
-
+.probootstrap-section.probootstrap-bg-black {
+    background: #111
+}
 @media screen and (max-width: 768px) {
     .probootstrap-section {
         padding: 3em 0

@@ -3,15 +3,16 @@
 
 @section('content')
 
-    <section class="probootstrap-half">
-        <div class="image-wrap">
-            <div class="image" style="background-image: url('/storage/{{$data->image}}');"></div>
-        </div>
-        <div class="text">
 
-            {!!  $data->body !!}
+    <section class="probootstrap-section probootstrap-bg-white">
+        <div class="container-fluid">
+            <div class="section-heading text-center">
+                <h2 class="mt0 mb0">{{ $data->title}}</h2>
+                <div class="text">
+                    {!!  $data->body !!}
+
+                </div>
         </div>
     </section>
-
 
 @endsection
