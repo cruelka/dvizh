@@ -60,8 +60,8 @@
             <div class="row mb80">
                 <div class="col-md-4">
                     <div class="probootstrap-footer-widget">
-                        <h3>Информация</h3>
-                        <p>Небольшой текст о компании.</p>
+                        <h3>{{$footer->title}}</h3>
+                        <p>{{$footer->excerpt}}</p>
 
                     </div>
                 </div>
