@@ -1540,6 +1540,13 @@ a.hover-reverse:active, a.hover-reverse:focus, a.hover-reverse:hover {
     line-height: 40px;
     font-weight: 700
 }
+@media screen and (max-width: 768px) {
+    .flexslider .probootstrap-heading {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 700
+    }
+}
 
 .flexslider .probootstrap-heading a {
     color: rgba(255, 255, 255, .8);
