@@ -1523,7 +1523,7 @@ a.hover-reverse:active, a.hover-reverse:focus, a.hover-reverse:hover {
 }
 
 .flexslider, .flexslider .slides > li, .slider-height {
-    height: 650px;
+    height: 500px;
     overflow: hidden
 }
 
@@ -1586,7 +1586,7 @@ a.hover-reverse:active, a.hover-reverse:focus, a.hover-reverse:hover {
 }
 
 .flexslider .probootstrap-slider-text {
-    margin-top: 300px
+    margin-top: 150px
 }
 
 @media screen and (max-width: 480px) {
