@@ -1,8 +1,13 @@
 /* Your custom css code goes here */
 .container_scroll {
-    position: relative;
+    position: absolute;
     width: 24px;
     height: 24px;
+    /* border: 10px; */
+    bottom: 40px;
+    left: 50%;
+    z-index: 9999;
+    margin-left: -12px;
 }
 
 .chevron {
