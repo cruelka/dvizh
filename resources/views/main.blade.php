@@ -83,7 +83,6 @@
             <div class="chevron"></div>
             <div class="chevron"></div>
             <div class="chevron"></div>
-            <span class="text">Прокрутите вниз</span>
         </div>
 
     </section>
