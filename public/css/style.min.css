@@ -496,7 +496,7 @@ a.hover-reverse:active, a.hover-reverse:focus, a.hover-reverse:hover {
     display: inline-block;
     width: 18px;
     height: 2px;
-    color: #fff;
+    color: #666;
     font: 700 14px/.4 Helvetica, arial;
     text-transform: uppercase;
     text-indent: -55px;
