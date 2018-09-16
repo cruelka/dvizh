@@ -17,7 +17,6 @@ Route::get('/', function () {
         $team= App\Page::where('slug', '=', 'nasha-komanda')->firstOrFail();
         $services= App\Page::where('slug', '=', 'chto-my-predlagaem')->firstOrFail();
         $footer= App\Page::where('slug', '=', 'zagolovok-v-futer')->firstOrFail();
-    
 
     return view('main',compact('posts', 'nash','team','services','footer'));
 });
