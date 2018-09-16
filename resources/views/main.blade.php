@@ -62,7 +62,7 @@
             <div class="image" style="background-image: url('/storage/{{$team->image}}');"></div>
         </div>
         <div class="text">
-            <p class="mb10 subtitle">{{$nash->meta_keywords}}</p>
+            <p class="mb10 subtitle">{{$team->meta_keywords}}</p>
             <h3 class="mt0 mb40">{{$team->title}}</h3>
             <p>{{$team->excerpt}}.</p>
             {!!  $team->body !!}
@@ -73,7 +73,7 @@
             <div class="image" style="background-image: url('/storage/{{$services->image}}');"></div>
         </div>
         <div class="text">
-            <p class="mb10 subtitle">{{$nash->meta_keywords}}</p>
+            <p class="mb10 subtitle">{{$services->meta_keywords}}</p>
             <h3 class="mt0 mb40">{{$services->title}}</h3>
 
            {!! $services->body !!}
