@@ -11,15 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-        $posts = App\Post::where('category_id','1')->take(8)->get();
-        $nash = App\Page::where('slug', '=', 'nash-magazin')->firstOrFail();
-        $team= App\Page::where('slug', '=', 'nasha-komanda')->firstOrFail();
-        $services= App\Page::where('slug', '=', 'chto-my-predlagaem')->firstOrFail();
-        $footer= App\Page::where('slug', '=', 'zagolovok-v-futer')->firstOrFail();
 
-    return view('main',compact('posts', 'nash','team','services','footer'));
-});
 
 Auth::routes();
 
@@ -33,4 +25,13 @@ Route::get('page/{slug}', function($slug){
 });
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
+});
+Route::get('/', function () {
+    $posts = App\Post::where('category_id','1')->take(8)->get();
+    $nash = App\Page::where('slug', '=', 'nash-magazin')->firstOrFail();
+    $team= App\Page::where('slug', '=', 'nasha-komanda')->firstOrFail();
+    $services= App\Page::where('slug', '=', 'chto-my-predlagaem')->firstOrFail();
+    $footer= App\Page::where('slug', '=', 'zagolovok-v-futer')->firstOrFail();
+
+    return view('main',compact('posts', 'nash','team','services','footer'));
 });
