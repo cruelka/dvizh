@@ -97,14 +97,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="probootstrap-link-wrap probootstrap-footer-widget">
-                        <h3>Услуги</h3>
-                        <ul>
-                            <li><a href="#">Наклейки</a></li>
-                            <li><a href="#">Магазин</a></li>
 
-                        </ul>
-                    </div>
                 </div>
                 <div class="col-md-4">
                     <div class="probootstrap-footer-widget">
