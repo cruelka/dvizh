@@ -82,45 +82,7 @@
         </div>
     </section>
 
-    <section class="probootstrap-section probootstrap-bg-white">
-        <div class="container">
-            <!-- END row -->
-            <div class="row">
-                <div class="col-md-12 probootstrap-animate">
-                    <div class="owl-carousel owl-carousel-testimony owl-carousel-fullwidth mt50">
-                        <div class="item">
 
-                            <div class="probootstrap-testimony-wrap">
-                                <figure>
-                                    <img src="{{asset("img/person_1.jpg")}}" alt="Free Bootstrap Template by uicookies.com">
-                                </figure>
-                                <blockquote class="quote">Текст отзыва <cite class="author">&mdash; Человек <br> <span>Звание человека</span></cite></blockquote>
-                            </div>
-
-                        </div>
-                        <div class="item">
-                            <div class="probootstrap-testimony-wrap">
-                                <figure>
-                                    <img src="{{asset("img/person_1.jpg")}}" alt="Free Bootstrap Template by uicookies.com">
-                                </figure>
-                                <blockquote class="quote">Текст отзыва <cite class="author">&mdash; Человек <br> <span>Звание человека</span></cite></blockquote>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="probootstrap-testimony-wrap">
-                                <figure>
-                                    <img src="{{asset("img/person_1.jpg")}}" alt="Free Bootstrap Template by uicookies.com">
-                                </figure>
-                                <blockquote class="quote">Текст отзыва <cite class="author">&mdash; Человек <br> <span>Звание человека</span></cite></blockquote>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!-- END row -->
-        </div>
-    </section>
 </div>
 
 @endsection

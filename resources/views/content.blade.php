@@ -3,30 +3,15 @@
 
 @section('content')
 
-    <div class="news container">
-        <div class="news__item">
-            <div class="row">
-
-                <div class="col-xs-12 col-md-7">
-                    <div class="news__item-inner">
-                        <img class="news__item-img" src="/storage/{{$data->image}}" alt="Image">
-
-                        <div class="news-card__title">
-                            {{$data->title}}
-                        </div>
-
-                        <div class="news-item__body">
-                            {!! $data->body !!}
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-
+    <section class="probootstrap-half">
+        <div class="image-wrap">
+            <div class="image" style="background-image: url('/storage/{{$data->image}}');"></div>
         </div>
-    </div>
-    </div>
+        <div class="text">
+
+            {!!  $data->body !!}
+        </div>
+    </section>
+
 
 @endsection
