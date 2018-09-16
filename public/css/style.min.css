@@ -109,7 +109,6 @@ a.hover-reverse:active, a.hover-reverse:focus, a.hover-reverse:hover {
     padding-bottom: 30px;
     width: 100%;
     z-index: 12;
-    position: absolute
 }
 
 .probootstrap-logo {
@@ -226,7 +225,7 @@ a.hover-reverse:active, a.hover-reverse:focus, a.hover-reverse:hover {
     font-weight: 400;
     text-transform: uppercase;
     padding: 10px 0;
-    color: #fff;
+    color: #666;
     font-size: 14px;
     letter-spacing: .2em;
     border-bottom: 2px solid transparent
