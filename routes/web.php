@@ -17,9 +17,7 @@ Route::get('/', function () {
         $team= App\Page::where('slug', '=', 'nasha-komanda')->firstOrFail();
         $services= App\Page::where('slug', '=', 'chto-my-predlagaem')->firstOrFail();
         $footer= App\Page::where('slug', '=', 'zagolovok-v-futer')->firstOrFail();
-
-
-
+    
 
     return view('main',compact('posts', 'nash','team','services','footer'));
 });
@@ -30,7 +28,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('page/{slug}', function($slug){
     $data = App\Page::where('slug', '=', $slug)->firstOrFail();
-    return view('content', compact('data'));
+    $footer= App\Page::where('slug', '=', 'zagolovok-v-futer')->firstOrFail();
+
+    return view('content', compact('data','footer'));
 });
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
