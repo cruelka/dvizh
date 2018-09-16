@@ -26,7 +26,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
+Route::get('page/{slug}', function($slug){
+    $data = App\Page::where('slug', '=', $slug)->firstOrFail();
+    return view('content', compact('data'));
+});
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
