@@ -48,35 +48,35 @@
     </section>
     <section class="probootstrap-half">
         <div class="image-wrap">
-            <div class="image" style="background-image: url('/storage/{{$nash->image}}');"></div>
+            <div class="image" style="background-image: url('/storage/{{$nash->first()->image}}');"></div>
         </div>
         <div class="text">
-            <p class="mb10 subtitle">{{$nash->meta_keywords}}</p>
-            <h3 class="mt0 mb40">{{$nash->title}}</h3>
-            <p>{{ $nash->excerpt }}.</p>
-          {!!  $nash->body !!}
+            <p class="mb10 subtitle">{{$nash->first()->meta_keywords}}</p>
+            <h3 class="mt0 mb40">{{$nash->first()->title}}</h3>
+            <p>{{ $nash->first()->excerpt }}.</p>
+          {!!  $nash->first()->body !!}
         </div>
     </section>
     <section class="probootstrap-half reverse">
         <div class="image-wrap">
-            <div class="image" style="background-image: url('/storage/{{$team->image}}');"></div>
+            <div class="image" style="background-image: url('/storage/{{$team->first()->image}}');"></div>
         </div>
         <div class="text">
-            <p class="mb10 subtitle">{{$team->meta_keywords}}</p>
-            <h3 class="mt0 mb40">{{$team->title}}</h3>
-            <p>{{$team->excerpt}}.</p>
-            {!!  $team->body !!}
+            <p class="mb10 subtitle">{{$team->first()->meta_keywords}}</p>
+            <h3 class="mt0 mb40">{{$team->first()->title}}</h3>
+            <p>{{$team->first()->excerpt}}.</p>
+            {!!  $team->first()->body !!}
         </div>
     </section>
     <section class="probootstrap-half">
         <div class="image-wrap">
-            <div class="image" style="background-image: url('/storage/{{$services->image}}');"></div>
+            <div class="image" style="background-image: url('/storage/{{$services->first()->image}}');"></div>
         </div>
         <div class="text">
-            <p class="mb10 subtitle">{{$services->meta_keywords}}</p>
-            <h3 class="mt0 mb40">{{$services->title}}</h3>
+            <p class="mb10 subtitle">{{$services->first()->meta_keywords}}</p>
+            <h3 class="mt0 mb40">{{$services->first()->title}}</h3>
 
-           {!! $services->body !!}
+           {!! $services->first()->body !!}
 
         </div>
     </section>
@@ -90,8 +90,8 @@
             <div class="row mb80">
                 <div class="col-md-4">
                     <div class="probootstrap-footer-widget">
-                        <h3>{{$footer->title}}</h3>
-                        <p>{{$footer->excerpt}}</p>
+                        <h3>{{$footer->first()->title}}</h3>
+                        <p>{{$footer->first()->excerpt}}</p>
 
                     </div>
                 </div>
