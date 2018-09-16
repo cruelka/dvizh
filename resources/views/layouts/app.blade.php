@@ -1,80 +1,109 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Движение</title>
+    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Rubik:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('css/styles-merged.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/custom.css')}}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src='{{ asset("js/vendor/html5shiv.min.js")}}'></script>
+    <script src='{{asset("js/vendor/respond.min.js")}}'></script>
+    <![endif]-->
 </head>
 <body>
-    <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
 
-                    <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse" aria-expanded="false">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+<!-- START: header -->
 
-                    <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
-                    </a>
-                </div>
+<div class="probootstrap-loader"></div>
 
-                <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        &nbsp;
-                    </ul>
+<header role="banner" class="probootstrap-header">
+    <div class="container">
+        <a href="/" class="probootstrap-logo"><img style = "width:250px;" src="{{asset("img/logo.png")}}"></a>
 
-                    <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Register</a></li>
-                        @else
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
+        <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Меню</i></a>
+        <div class="mobile-menu-overlay"></div>
 
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                    </li>
-                                </ul>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
+        <nav role="navigation" class="probootstrap-nav hidden-xs">
+            <ul class="probootstrap-main-nav">
+                <li class="active"><a href="/">Адрес</a></li>
+                <li><a href="/">Доставка</a></li>
+                <li><a href="/">Контакты</a></li>
+                <li><a href="/">Акции</a></li>
+            </ul>
+            <div class="extra-text visible-xs">
+                <!-- <a href="#" class="probootstrap-burger-menu"><i>Меню</i></a>
+                 <h5>Мы в социальных сетях</h5>
+                 <ul class="social-buttons">
+                     <li><a href="#"><i class="icon-twitter"></i></a></li>
+                     <li><a href="#"><i class="icon-facebook2"></i></a></li>
+                     <li><a href="#"><i class="icon-instagram2"></i></a></li>
+                 </ul>
+                 -->
             </div>
         </nav>
-
-        @yield('content')
     </div>
+</header>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+
+@yield('content')
+<div class="probootstrap-footer-spacer"></div>
+<footer class="probootstrap-footer">
+    <div class="probootstrap-footer-section">
+        <div class="container">
+            <div class="row mb80">
+                <div class="col-md-4">
+                    <div class="probootstrap-footer-widget">
+                        <h3>Информация</h3>
+                        <p>Небольшой текст о компании.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="probootstrap-link-wrap probootstrap-footer-widget">
+                        <h3>Услуги</h3>
+                        <ul>
+                            <li><a href="#">Наклейки</a></li>
+                            <li><a href="#">Магазин</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="probootstrap-footer-widget">
+                        <!--
+                        <h3>Мы в социальных сетях</h3>
+                        <ul class="probootstrap-footer-social">
+                            <li><a href="#"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                            <li><a href="#"><i class="icon-instagram2"></i></a></li>
+                        </ul>
+                        -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p class="text-center">&copy; Движение <i class="icon-heart2"></i> </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
+</div>
+
+
+<script src="{{asset("js/scripts.min.js")}}"></script>
+<script src="{{asset("js/main.min.js")}}"></script>
+<script src="{{asset("js/custom.js")}}"></script>
+
 </body>
 </html>
