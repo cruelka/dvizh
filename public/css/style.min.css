@@ -389,6 +389,11 @@ a.hover-reverse:active, a.hover-reverse:focus, a.hover-reverse:hover {
     position: relative;
     z-index: 3
 }
+.container-fluid img{
+    display: block;
+    width : 100% !important;
+    height: inherit !important;
+}
 
 .probootstrap-intro h1 {
     font-size: 120px;
