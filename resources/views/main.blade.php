@@ -51,11 +51,10 @@
             <div class="image" style="background-image: url('/storage/{{$nash->image}}');"></div>
         </div>
         <div class="text">
-            <p class="mb10 subtitle">Наш магазин</p>
+            <p class="mb10 subtitle">{{$nash->meta_description}}</p>
             <h3 class="mt0 mb40">{{$nash->title}}</h3>
             <p>{{ $nash->excerpt }}.</p>
           {!!  $nash->body !!}
-            <p> <a href="https://www.office-zakaz.ru/" class="btn btn-primary mb10">Перейти</a></p>
         </div>
     </section>
     <section class="probootstrap-half reverse">
@@ -63,7 +62,7 @@
             <div class="image" style="background-image: url('/storage/{{$team->image}}');"></div>
         </div>
         <div class="text">
-            <p class="mb10 subtitle">Мы - Движение</p>
+            <p class="mb10 subtitle">{{$nash->meta_description}}</p>
             <h3 class="mt0 mb40">{{$team->title}}</h3>
             <p>{{$team->excerpt}}.</p>
             {!!  $team->body !!}
@@ -74,7 +73,7 @@
             <div class="image" style="background-image: url('/storage/{{$services->image}}');"></div>
         </div>
         <div class="text">
-            <p class="mb10 subtitle">Наши услуги</p>
+            <p class="mb10 subtitle">{{$nash->meta_description}}</p>
             <h3 class="mt0 mb40">{{$services->title}}</h3>
 
            {!! $services->body !!}
