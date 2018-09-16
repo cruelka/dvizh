@@ -32,10 +32,10 @@
 
         <nav role="navigation" class="probootstrap-nav hidden-xs">
             <ul class="probootstrap-main-nav">
-                <li class="active"><a href="/">Адрес</a></li>
-                <li><a href="/">Доставка</a></li>
-                <li><a href="/">Контакты</a></li>
-                <li><a href="/">Акции</a></li>
+                <li class="active"><a href="/page/adres">Адрес</a></li>
+                <li><a href="/page/dostavka">Доставка</a></li>
+                <li><a href="/page/kontakty">Контакты</a></li>
+                <li><a href="/page/akcii">Акции</a></li>
             </ul>
             <div class="extra-text visible-xs">
                 <!-- <a href="#" class="probootstrap-burger-menu"><i>Меню</i></a>
