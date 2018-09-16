@@ -9,7 +9,7 @@
             <div class="section-heading text-center">
                 <h2 class="mt0 mb0">{{ $data->title}}</h2>
                 <div class="text">
-                    {!!  $data->body !!}
+                  <div style="padding:15px;">  {!!  $data->body !!} </div>
 
                 </div>
         </div>
