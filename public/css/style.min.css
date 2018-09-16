@@ -812,7 +812,7 @@ a.hover-reverse:active, a.hover-reverse:focus, a.hover-reverse:hover {
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-transition: .8s all ease-in-out;
-    transition: .8s all ease-in-out;
+    transition: 1.1s all ease-in-out;
     background-color: #f4bd00
 }
 
