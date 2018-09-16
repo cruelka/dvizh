@@ -105,8 +105,8 @@ a.hover-reverse:active, a.hover-reverse:focus, a.hover-reverse:hover {
 }
 
 .probootstrap-header {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 15px;
     width: 100%;
     z-index: 12;
 }
@@ -1515,7 +1515,7 @@ a.hover-reverse:active, a.hover-reverse:focus, a.hover-reverse:hover {
 }
 
 .flexslider, .flexslider .slides > li, .slider-height {
-    height: 700px;
+    height: 650px;
     overflow: hidden
 }
 
@@ -1535,8 +1535,8 @@ a.hover-reverse:active, a.hover-reverse:focus, a.hover-reverse:hover {
 
 .flexslider .probootstrap-heading {
     color: #fff;
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 40px;
+    line-height: 40px;
     font-weight: 700
 }
 
